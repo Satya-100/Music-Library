@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navigation_bar">
+        <img class="logo" src="logo.jpeg" alt="Music Libray">
+        <a href="#">Login/Sign Up</a>
+        <a href="#">User Reviews</a>
+        <a href="#">Recommended Albums</a>
+        <a href="#">Featured Playlist</a>
+        <a href="#">Home</a>
+    </div>
+    <br>
+
+    <div class="Home">
+        <div class="left">
+            <h1>Soundtrack Your Soul</h1>
+            <h3>Discover Your Rhythm, Create Your Beat</h3>
+            <button>Explore Featured Playlist</button>
+        </div>
+        
+        <div class="right">
+            <img src="home.svg" alt="">
+        </div>
+    </div>
+    
+    <div class="playlist">
+        <h1>Featured Playlists</h1>
+        <p class="play2">Top Tracks: Dive into Our Curated Collection!</p>
+        <div class="cards">
+
+            <div class="playlist-card">
+                <img src="inspire.jpg" alt="Inspire">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>Insipirational</h3>
+                        <input type="checkbox" id="follow-toggle1" class="follow-toggle">
+                        <label for="follow-toggle1" class="follow-btn"></label>
+                    </div>
+                    <p>Songs to Lift Your Spirit: Inspire Your Soul!</p>
+                    <span class="song-count">10 songs</span>
+                </div>
+            </div>
+
+
+            <div class="playlist-card">
+                <img src="party.jpg" alt="party">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>Party</h3>
+                        <input type="checkbox" id="follow-toggle2" class="follow-toggle">
+                        <label for="follow-toggle2" class="follow-btn"></label>
+                    </div>
+                    <p>Let's Get Loud: Party Anthems for Every Occasion!</p>
+                    <span class="song-count">15 songs</span>
+                </div>
+            </div>
+
+            
+            <div class="playlist-card">
+                <img src="romantic.jpg" alt="Romantic">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>Romantic</h3>
+                        <input type="checkbox" id="follow-toggle3" class="follow-toggle">
+                        <label for="follow-toggle3" class="follow-btn"></label>
+                    </div>
+                    <p>Love Notes: Your Playlist for Heartfelt Moments!</p>
+                    <span class="song-count">12 songs</span>
+                </div>
+            </div>
+
+            
+            <div class="playlist-card">
+                <img src="hip-hop.jpg" alt="Hip-Hop">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>Hip-Hop</h3>
+                        <input type="checkbox" id="follow-toggle4" class="follow-toggle">
+                        <label for="follow-toggle4" class="follow-btn"></label>
+                    </div>
+                    <p>Urban Vibes: Unleash the Hip-Hop Hustle!</p>
+                    <span class="song-count">18 songs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="albums">
+        <h1>Recommended Albums</h1>
+        <p class="subtitle">Your Musical Journey Awaits: Top Album Picks for Every Ear!</p>
+        <div class="search_container">
+            <form>
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"><img src="search.svg" class="search_bar"></i></button>
+            </form>
+            
+        </div>
+
+        <div class="cards">
+            <div class="playlist-card">
+                <img src="arjit.jpeg" alt="Arjit Singh">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>Arjit Singh</h3>
+                    </div>
+                    <div class="know-more">
+                        <button>Know More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="AR.jpeg" alt="AR Rahman">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>A.R. Rahman</h3>
+                    </div> 
+                    <div class="know-more">
+                        <button>Know More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="Bprak.jpeg" alt="Bprak">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>B Prak</h3>
+                    </div>
+                    <div class="know-more">
+                        <button>Know More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <img src="diljit.jpeg" alt="Diljit">
+                <div class="playlist-info">
+                    <div class="playlist-title">
+                        <h3>Diljit</h3>
+                    </div>
+                    <div class="know-more">
+                        <button>Know More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="reviews">
+        <h1>User Reviews</h1>
+        <div class="reviews-cards">
+            <div class="users">
+                <img src="inspire.jpg" alt="user">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis, repudiandae inventore quos enim harum facere voluptate nihil modi eius illum vel eos itaque asperiores cum repellendus aspernatur debitis? Voluptates.</p>
+            </div>
+
+            <div class="users">
+                <img src="inspire.jpg" alt="user">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis, repudiandae inventore quos enim harum facere voluptate nihil modi eius illum vel eos itaque asperiores cum repellendus aspernatur debitis? Voluptates.</p>
+            </div>
+
+            <div class="users">
+                <img src="inspire.jpg" alt="user">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis, repudiandae inventore quos enim harum facere voluptate nihil modi eius illum vel eos itaque asperiores cum repellendus aspernatur debitis? Voluptates.</p>
+            </div>
+
+            <div class="users">
+                <img src="inspire.jpg" alt="user">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis, repudiandae inventore quos enim harum facere voluptate nihil modi eius illum vel eos itaque asperiores cum repellendus aspernatur debitis? Voluptates.</p>
+            </div>
+        </div>
+        <div class="review-form">
+            <form action="post">
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email"><br>
+                <label for="reviews">Reviews </label>
+                <textarea name="reviews" id="reviews"></textarea>
+                <button>Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer" >
+        <button><i class="fa fa-instagram" style="font-size:48px;color:rgba(241, 34, 210, 0.94)"></i></button>
+        <button><i class="fa fa-twitter" style="font-size:48px;color:rgb(0, 132, 255)"></i></button>
+        <button><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></button>
+        <button>Terms & Conditions</button>
+        <button>Privacy Policy</button>
+        <button class="back_to_top"><a href="#"><img src="up-arrow.svg" alt="Back to Top"></a></button>
+    </div>
+</body>
+</html>

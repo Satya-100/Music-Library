@@ -1,0 +1,397 @@
+*{
+    background-color: rgb(29, 223, 168);
+    margin: 0px;
+}
+
+.logo{
+    width: 4.6%;
+    align-items: start;
+}
+
+.navigation_bar{
+    z-index: 2;
+}
+
+.navigation_bar a{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 26px;
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(241, 241, 241);
+    font-size: large;
+}
+
+.navigation_bar a:hover{
+    background-color: rgba(11, 244, 120, 0.823);
+    color: whitesmoke;
+}
+
+
+.navigation_bar{
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(37, 216, 120);
+    height: 70px;
+    width: 100%;
+}
+
+.Home{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.left{
+    flex: 50%;
+}
+
+.left h1{
+    font-weight: 600;
+    font-size: 74px;
+    color: rgb(0, 0, 0);
+    line-height: 26px;
+    margin-top: 20%;
+    margin-bottom: 2%;
+}
+
+.left h3{
+    color: black;
+    font-size: 25px;
+    line-height: 66px;
+}
+
+.left button{
+    width: 33%;
+    height: 8%;
+    border-radius: 25px;
+    background: linear-gradient(270deg, #339d7a 0%, #16dfa3 100%);
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 25px;
+    transition: all 22ms ease;
+}
+
+.left button:hover{
+    transform: translate3d(0px, 0px, 0px) scale3d(1.09, 1.09, 1.09) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.right{
+    flex: 50%;
+}
+
+.right img{
+    width: 100%;
+    margin-top: -12%;
+}
+
+.playlist{
+    margin: 0% 10%;
+}
+
+.playlist h1{
+    text-align: center;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.play2{
+    text-align: center;
+    font-size: 22px;
+    line-height: 57px;
+}
+
+.cards{
+    display: flex;
+    overflow: hidden;
+}
+
+.playlist-card {
+    flex: 25%;
+    position: relative;
+    width: 250px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.playlist-card:hover {
+    transform: scale(1.1);
+    background-color: rgb(226, 157, 195);
+}
+
+.playlist-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.playlist-card p {
+    font-size: 1rem;
+    color: #766a6a;
+}
+
+.playlist-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.playlist-title {
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.playlist-title h3 {
+    margin: 0;
+    align-self: center;
+}
+
+.song-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8c2db4;
+    color: #f9e537;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.follow-btn {
+    padding: 10px 20px;
+    background: #ef288f;
+    height: inherit;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.follow-toggle {
+    display: none;
+}
+
+
+.follow-toggle + .follow-btn::before {
+    content: "Follow";
+    display: inline-block;
+}
+
+.follow-toggle:checked + .follow-btn::before {
+    content: "Following";
+}
+
+.follow-toggle:checked + .follow-btn {
+    background: green;
+    color: white;
+}
+
+
+.search_container{
+    padding: 2px 16px;
+}
+
+.search-bar {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #1be214c2;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:hover {
+    border-color: #999;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    margin-right: 10px;
+}
+
+
+
+.albums{
+    margin: 0% 10%;
+}
+
+.albums h1{
+    text-align: center;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 22px;
+    line-height: 57px;
+}
+
+
+  
+.search_container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 18%;
+}
+  
+.search_container button {
+    /* float: right; */
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-right: 16px;
+    background: #fff0;
+    font-size: 9px;
+    border: none;
+    cursor: pointer;
+}
+  
+.search_container button:hover {
+    background: #ccc;
+}
+
+.search_container form button img{
+    width: 42px;
+    translate: 0px 16px;
+}
+
+
+.know-more {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.album-card:hover {
+  width: 250px;
+  height: 300px;
+}
+
+.album-card:hover .know-more {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reviews-cards{
+  display: flex;
+}
+
+.users{
+  flex: 25%;
+  position: relative;
+  width: 50px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 70px;
+  transition: transform 0.3s;
+}
+.users img{
+  width: 100%;
+  height: 57%;
+  border-radius: 50%;
+  translate: 0px 14px;
+  scale: 0.9;
+}
+
+.users h2{
+    line-height: 50px;
+    padding: 2px 118px;
+}
+
+.users p{
+    padding: 0px 10px;
+}
+
+.users:hover{
+    transform: scale(1.1);
+}
+
+.review-form{
+    margin: 10px 20px;
+    padding: 2% 43%;
+}
+
+.review-form form input{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 233px;
+    height: 36px;
+}
+
+.review-form form label{
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.review-form form textarea{
+    border-radius: 20px;
+    width: 233px;
+    height: 36;
+    border: 2px solid black;
+}
+
+.review-form form button{
+    width: 200px;
+    height: 33px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: palegoldenrod;
+    transition: transform 0.3ms;
+    margin: 21px 19px;
+}
+
+.review-form from button:hover{
+    transform: scale(2);
+    background-color: pink;
+}
+
+
+.footer{
+    background-color: rgb(29, 223, 168);
+    margin: 0px;
+}
+
+.footer button{
+    border-color: transparent;
+    transition: transform 0.3s;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.footer button:hover{
+    transform: scale(1.1);
+}
+
+.back_to_top{
+    float: right;
+    width: 63px;
+    height: 61px;
+    border-radius: 50%;
+    overflow: hidden;
+}
